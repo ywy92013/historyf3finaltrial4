@@ -608,9 +608,9 @@
 
     function uploadDataToGoogleSheet(name, score, evaluation) {
         // ⚠️請把下方引號內的網址，替換成你在 Apps Script 得到的 Web App URL⚠️
-        const scriptUrl = "YOUR_GOOGLE_SCRIPT_URL_HERE"; 
+        const scriptUrl = "https://script.google.com/macros/s/AKfycbx3NrCXlOvcYzqtTJithH9MuHlH76WHgVYhBRoTrgkKd8z85WWad-BBxGS27_pqamqt/exec"; 
         
-        if (scriptUrl === "YOUR_GOOGLE_SCRIPT_URL_HERE" || !scriptUrl) {
+        if (scriptUrl === "https://script.google.com/macros/s/AKfycbx3NrCXlOvcYzqtTJithH9MuHlH76WHgVYhBRoTrgkKd8z85WWad-BBxGS27_pqamqt/exec" || !scriptUrl) {
             console.log("未檢測到有效 Google Apps Script URL，跳過雲端數據同步。");
             document.getElementById("upload-status").innerText = "⚠️ 未設定雲端連線，無法同步戰功。";
             return;
